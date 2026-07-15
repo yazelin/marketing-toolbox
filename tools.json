@@ -107,12 +107,13 @@
     "repo": "https://github.com/ZhengPeng7/BiRefNet"
   },
   {
-    "name": "繁化姬",
-    "url": "https://zhconvert.org/",
+    "name": "台灣化轉換器",
+    "url": "https://yazelin.github.io/taiwanize/",
     "category": "文案與提示詞",
-    "tag": "官方",
-    "desc": "簡轉繁加台灣用語在地化,不只換字還換詞",
-    "usage": "對岸來的稿發文前過一輪,別讓「視頻」「軟件」漏上你的粉專"
+    "tag": "自製",
+    "desc": "簡轉繁加台灣用語,打字即轉,文字不離開瀏覽器",
+    "usage": "對岸來的稿發文前過一輪,別讓「視頻」「軟件」漏上你的粉專;機密文案也敢貼",
+    "repo": "https://github.com/yazelin/taiwanize"
   },
   {
     "name": "PageSpeed Insights",
