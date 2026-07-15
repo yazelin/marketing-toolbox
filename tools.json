@@ -139,12 +139,13 @@
     "usage": "分享卡片破圖時來這查是缺 og:image 還是尺寸不對"
   },
   {
-    "name": "Wheel of Names",
-    "url": "https://wheelofnames.com/",
+    "name": "抽獎轉盤",
+    "url": "https://yazelin.github.io/lucky-wheel/",
     "category": "互動與名單",
-    "tag": "官方",
-    "desc": "名單轉盤抽獎,貼上名字全螢幕轉給大家看",
-    "usage": "直播抽獎用它轉,過程全螢幕透明,觀眾才服氣"
+    "tag": "自製",
+    "desc": "貼上 FB 留言一鍵洗名單,全螢幕轉盤抽獎,無廣告",
+    "usage": "FB 留言抽獎不用手動整理名單,留言區整坨貼上就能抽",
+    "repo": "https://github.com/yazelin/lucky-wheel"
   },
   {
     "name": "行銷連結工具",
