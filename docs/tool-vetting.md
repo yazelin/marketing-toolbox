@@ -20,6 +20,25 @@
 | Anthony 的 QR 工具箱 | 2026-07-15 | 過 | 過 | 過 | PASS | 輸入本站網址 QR 即時更新(740×740),可下載 |
 | QRCode Monkey | 2026-07-15 | 過 | 過 | 過 | 不收 | 功能可用,但 cookie 同意牆+廣告/追蹤重;QR 類二擇一收更乾淨的 antfu 版 |
 
+## 替換紀錄(外部工具 → 自製)
+
+替換鐵律:同一份輸入在「原版 vs 自製版」各跑一次核心操作,自製版贏或平手才替換。
+
+### 2026-07-16:Campaign URL Builder → 行銷連結工具(link-kit)
+
+同輸入對比(url=`https://yazelin.github.io/`、source=facebook、medium=social、campaign 一組):
+
+| 面向 | Google Campaign URL Builder | link-kit |
+|------|------|------|
+| 產出參數 | `?utm_source=facebook&utm_medium=social&utm_campaign=...` | 相同(平手) |
+| 多通路 | 一次一組 | FB/IG/LINE/電子報/YT/Threads 勾選批次(贏) |
+| QR | 無 | 每列附 QR,可調尺寸/容錯/顏色(贏) |
+| 歷史/匯出 | 無 | localStorage 歷史+複製全部+CSV(贏) |
+| 介面/追蹤 | 英文、掛分析 | 繁中、零追蹤(贏) |
+
+結論:替換。驗證:`link-kit/verify/check.cjs` 對線上站 exit 0(rows=3、utm 正確覆蓋、QR 非空、無橫捲)。
+antfu QR 工具箱保留不替換:其樣式/藝術 QR 功能自製版沒有,誠實並存。
+
 ## 自製工具門檻邊界檢查
 
 | 工具 | 實測日期 | 結果 | 備註 |

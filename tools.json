@@ -147,12 +147,13 @@
     "usage": "直播抽獎用它轉,過程全螢幕透明,觀眾才服氣"
   },
   {
-    "name": "Campaign URL Builder",
-    "url": "https://ga-dev-tools.google/campaign-url-builder/",
+    "name": "行銷連結工具",
+    "url": "https://yazelin.github.io/link-kit/",
     "category": "連結與追蹤",
-    "tag": "官方",
-    "desc": "Google 官方 UTM 產生器,填欄位組出追蹤網址",
-    "usage": "每檔活動連結都加 UTM,GA 才分得出哪篇貼文真的帶單"
+    "tag": "自製",
+    "desc": "UTM 加 QR 一條龍,勾通路一次產出全部追蹤連結",
+    "usage": "一檔活動要發 FB/IG/LINE,各通路的 UTM 連結和 QR 一次拿齊",
+    "repo": "https://github.com/yazelin/link-kit"
   },
   {
     "name": "Anthony 的 QR 工具箱",
