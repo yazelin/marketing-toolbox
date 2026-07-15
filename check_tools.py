@@ -45,6 +45,10 @@ def check(path="tools.json", live=False):
                 with urllib.request.urlopen(req, timeout=20) as resp:
                     if resp.status >= 400:
                         errors.append(f"{where}: HTTP {resp.status}")
+            except urllib.error.HTTPError as e:
+                # 403/429 = 反爬蟲/限流,伺服器活著;404/410/5xx 才算死
+                if e.code not in (403, 429):
+                    errors.append(f"{where}: HTTP {e.code}")
             except Exception as e:
                 errors.append(f"{where}: 連線失敗 {e}")
     return errors, len(tools)

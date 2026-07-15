@@ -61,5 +61,106 @@
     "desc": "貼一個網址,把網頁打成碎片,真實物理掉落堆疊",
     "usage": "官網改版文的哏:把舊站打爛的影片配新站連結,自帶話題",
     "repo": "https://github.com/yazelin/div-smash"
+  },
+  {
+    "name": "Squoosh",
+    "url": "https://squoosh.app/",
+    "category": "素材製作",
+    "tag": "開源",
+    "desc": "Google 出品的圖片壓縮器,拖進來即壓,左右滑動比對畫質",
+    "usage": "貼文圖先壓小再上傳,別讓 FB 幫你壓到糊掉",
+    "repo": "https://github.com/GoogleChromeLabs/squoosh"
+  },
+  {
+    "name": "Photopea",
+    "url": "https://www.photopea.com/",
+    "category": "素材製作",
+    "tag": "官方",
+    "desc": "瀏覽器裡的 Photoshop,開 PSD 改字改圖免安裝",
+    "usage": "外包給的 PSD 素材要改一行字,不用等設計師也不用買軟體"
+  },
+  {
+    "name": "SVGOMG",
+    "url": "https://svgomg.net/",
+    "category": "素材製作",
+    "tag": "開源",
+    "desc": "SVG 最佳化工具,肉眼無差畫質下把檔案砍到最小",
+    "usage": "官網 logo 與圖示上線前過一輪,頁面速度分數有感",
+    "repo": "https://github.com/jakearchibald/svgomg"
+  },
+  {
+    "name": "Excalidraw",
+    "url": "https://excalidraw.com/",
+    "category": "素材製作",
+    "tag": "開源",
+    "desc": "手繪風白板,畫流程圖與示意圖,匯出 PNG/SVG",
+    "usage": "行銷漏斗、活動流程畫成手繪圖,貼進簡報和貼文都親切",
+    "repo": "https://github.com/excalidraw/excalidraw"
+  },
+  {
+    "name": "AI 去背(BiRefNet)",
+    "url": "https://huggingface.co/spaces/ZhengPeng7/BiRefNet_demo",
+    "category": "素材製作",
+    "tag": "開源",
+    "desc": "開源去背模型線上 demo,上傳圖片直接拿去背結果",
+    "usage": "商品照去背做主圖,不用付費去背服務的浮水印贖金",
+    "repo": "https://github.com/ZhengPeng7/BiRefNet"
+  },
+  {
+    "name": "繁化姬",
+    "url": "https://zhconvert.org/",
+    "category": "文案與提示詞",
+    "tag": "官方",
+    "desc": "簡轉繁加台灣用語在地化,不只換字還換詞",
+    "usage": "對岸來的稿發文前過一輪,別讓「視頻」「軟件」漏上你的粉專"
+  },
+  {
+    "name": "PageSpeed Insights",
+    "url": "https://pagespeed.web.dev/",
+    "category": "發文前檢測",
+    "tag": "官方",
+    "desc": "Google 官方網頁速度與體驗評分,手機桌機分開看",
+    "usage": "活動頁太慢廣告費就白燒,上線前先看手機分數"
+  },
+  {
+    "name": "Metatags",
+    "url": "https://metatags.io/",
+    "category": "發文前檢測",
+    "tag": "官方",
+    "desc": "貼網址即時預覽 Google、FB、X 上的分享長相",
+    "usage": "發文前先看分享卡片會長怎樣,標題被截斷當場就知道"
+  },
+  {
+    "name": "OpenGraph.xyz",
+    "url": "https://www.opengraph.xyz/",
+    "category": "發文前檢測",
+    "tag": "官方",
+    "desc": "OG 標籤檢查器,列出缺哪些標籤與各平台預覽",
+    "usage": "分享卡片破圖時來這查是缺 og:image 還是尺寸不對"
+  },
+  {
+    "name": "Wheel of Names",
+    "url": "https://wheelofnames.com/",
+    "category": "互動與名單",
+    "tag": "官方",
+    "desc": "名單轉盤抽獎,貼上名字全螢幕轉給大家看",
+    "usage": "直播抽獎用它轉,過程全螢幕透明,觀眾才服氣"
+  },
+  {
+    "name": "Campaign URL Builder",
+    "url": "https://ga-dev-tools.google/campaign-url-builder/",
+    "category": "連結與追蹤",
+    "tag": "官方",
+    "desc": "Google 官方 UTM 產生器,填欄位組出追蹤網址",
+    "usage": "每檔活動連結都加 UTM,GA 才分得出哪篇貼文真的帶單"
+  },
+  {
+    "name": "Anthony 的 QR 工具箱",
+    "url": "https://qrcode.antfu.me/",
+    "category": "連結與追蹤",
+    "tag": "開源",
+    "desc": "開源 QR code 產生器,可調樣式與容錯率",
+    "usage": "印刷品放的 QR 先在這裡調高容錯率,實體海報掃得動",
+    "repo": "https://github.com/antfu/qrcode-toolkit"
   }
 ]
