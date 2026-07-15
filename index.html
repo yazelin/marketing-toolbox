@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>行銷工具箱|免費、免註冊的行銷線上小工具</title>
+<meta name="description" content="台灣行銷人的免費線上小工具書籤站:素材製作、文案與提示詞、發文前檢測、互動與名單、連結與追蹤。每個工具免費、免註冊、開瀏覽器就能用。">
+<link rel="canonical" href="https://yazelin.github.io/marketing-toolbox/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="行銷工具箱">
+<meta property="og:title" content="行銷工具箱|免費、免註冊的行銷線上小工具">
+<meta property="og:description" content="每個工具點進去就能用:免費、免註冊、開瀏覽器就好。素材、文案、檢測、互動、追蹤五類實測收錄。">
+<meta property="og:url" content="https://yazelin.github.io/marketing-toolbox/">
+<meta property="og:image" content="https://yazelin.github.io/marketing-toolbox/assets/og.png">
+<meta property="og:image:secure_url" content="https://yazelin.github.io/marketing-toolbox/assets/og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root {
+  --bg: #f6f7f9; --panel: #ffffff; --text: #1c2028; --muted: #5c6470;
+  --line: #dde1e7; --accent: #c77800; --accent-ink: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14161c; --panel: #1c1f27; --text: #eceef2; --muted: #9aa1ad;
+    --line: #2b2f3a; --accent: #f5a524; --accent-ink: #14161c;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+  line-height: 1.6;
+}
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+header.site { padding: 48px 0 8px; text-align: center; }
+header.site h1 { margin: 0; font-size: 2rem; letter-spacing: .05em; }
+header.site .tagline { color: var(--muted); margin: 8px 0 0; }
+.controls { position: sticky; top: 0; background: var(--bg); padding: 16px 0 12px; z-index: 5; }
+#q {
+  width: 100%; padding: 10px 14px; font-size: 1rem; color: var(--text);
+  background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+}
+#q:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.tabs button {
+  padding: 6px 14px; font-size: .95rem; cursor: pointer; color: var(--text);
+  background: var(--panel); border: 1px solid var(--line); border-radius: 999px;
+}
+.tabs button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+#count { color: var(--muted); font-size: .85rem; margin: 10px 0 0; }
+.grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px; padding: 16px 0 40px;
+}
+.card {
+  background: var(--panel); border: 1px solid var(--line); border-radius: 14px;
+  border-top: 4px solid var(--cat, var(--line));
+  padding: 16px; display: flex; flex-direction: column; gap: 8px;
+}
+.card .meta { display: flex; align-items: center; gap: 8px; font-size: .8rem; color: var(--muted); }
+.badge {
+  padding: 1px 8px; border-radius: 999px; border: 1px solid var(--line); font-size: .75rem;
+}
+.badge.tag-自製 { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.card h3 { margin: 0; font-size: 1.1rem; }
+.card .desc { margin: 0; font-size: .95rem; }
+.card .usage {
+  margin: 0; font-size: .88rem; color: var(--muted);
+  border-left: 3px solid var(--cat, var(--line)); padding-left: 10px;
+}
+.card .actions { margin-top: auto; display: flex; align-items: center; gap: 12px; padding-top: 6px; }
+.btn {
+  display: inline-block; padding: 7px 16px; border-radius: 10px; text-decoration: none;
+  background: var(--accent); color: var(--accent-ink); font-size: .95rem;
+}
+.card .actions .src { font-size: .85rem; color: var(--muted); }
+a { color: var(--accent); }
+#empty { display: none; text-align: center; color: var(--muted); padding: 40px 0 60px; }
+footer.site {
+  border-top: 1px solid var(--line); padding: 28px 0 40px; text-align: center;
+  color: var(--muted); font-size: .9rem;
+}
+footer.site nav { display: flex; justify-content: center; gap: 20px; margin: 10px 0; }
+</style>
+</head>
+<body>
+<header class="site wrap">
+  <h1>行銷工具箱</h1>
+  <p class="tagline">每個工具點進去就能用:免費、免註冊、開瀏覽器就好。</p>
+</header>
+
+<div class="controls wrap">
+  <input id="q" type="search" placeholder="搜尋工具、用途…" aria-label="搜尋工具">
+  <div class="tabs" id="tabs"></div>
+  <p id="count"></p>
+</div>
+
+<main class="wrap">
+  <div class="grid" id="grid"></div>
+  <div id="empty">沒有符合的工具。換個關鍵字,或
+    <a href="https://github.com/yazelin/marketing-toolbox/issues/new?template=submit-tool.yml">投稿一個</a>?
+  </div>
+</main>
+
+<footer class="site wrap">
+  <p>收錄門檻:免費、免註冊、開瀏覽器就能用——每個外部工具都人工實測過。
+    <a href="https://github.com/yazelin/marketing-toolbox/issues/new?template=submit-tool.yml">投稿工具</a></p>
+  <nav>
+    <a href="https://github.com/yazelin/marketing-toolbox">GitHub</a>
+    <a href="https://www.facebook.com/yaze.lin.gm">Facebook</a>
+    <a href="https://buymeacoffee.com/yazelin">Buy Me a Coffee</a>
+  </nav>
+  <p>MIT License © 2026 林亞澤</p>
+</footer>
+
+<noscript><p class="wrap" style="text-align:center">本頁需要啟用 JavaScript 才能顯示工具清單。</p></noscript>
+
+<script>
+const CATS = ['素材製作', '文案與提示詞', '發文前檢測', '互動與名單', '連結與追蹤'];
+const CAT_COLORS = {
+  '素材製作': '#e8763a',
+  '文案與提示詞': '#8a63d2',
+  '發文前檢測': '#2f9e6e',
+  '互動與名單': '#d6336c',
+  '連結與追蹤': '#3b82c4',
+};
+const state = { q: '', cat: '全部' };
+let tools = [];
+
+function el(tag, cls, text) {
+  const n = document.createElement(tag);
+  if (cls) n.className = cls;
+  if (text != null) n.textContent = text;
+  return n;
+}
+
+function card(t) {
+  const c = el('article', 'card');
+  c.style.setProperty('--cat', CAT_COLORS[t.category] || 'var(--line)');
+  const meta = el('div', 'meta');
+  meta.append(el('span', 'badge tag-' + t.tag, t.tag), el('span', null, t.category));
+  const actions = el('div', 'actions');
+  const go = el('a', 'btn', t.tag === '自製' ? '開啟工具' : '前往工具');
+  go.href = t.url;
+  go.target = '_blank';
+  go.rel = 'noopener';
+  actions.append(go);
+  if (t.repo) {
+    const src = el('a', 'src', '開源 repo');
+    src.href = t.repo;
+    src.target = '_blank';
+    src.rel = 'noopener';
+    actions.append(src);
+  }
+  c.append(meta, el('h3', null, t.name), el('p', 'desc', t.desc), el('p', 'usage', '實戰:' + t.usage), actions);
+  return c;
+}
+
+function render() {
+  const q = state.q.trim().toLowerCase();
+  const hits = tools.filter((t) =>
+    (state.cat === '全部' || t.category === state.cat) &&
+    (!q || [t.name, t.desc, t.usage, t.category, t.tag].join(' ').toLowerCase().includes(q))
+  );
+  const grid = document.getElementById('grid');
+  grid.replaceChildren(...hits.map(card));
+  document.getElementById('empty').style.display = hits.length ? 'none' : 'block';
+  document.getElementById('count').textContent = '顯示 ' + hits.length + ' / 共 ' + tools.length + ' 個工具';
+}
+
+function buildTabs() {
+  const tabs = document.getElementById('tabs');
+  ['全部', ...CATS].forEach((cat) => {
+    const b = el('button', null, cat);
+    b.setAttribute('aria-pressed', String(cat === state.cat));
+    b.addEventListener('click', () => {
+      state.cat = cat;
+      tabs.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+      render();
+    });
+    tabs.append(b);
+  });
+}
+
+document.getElementById('q').addEventListener('input', (e) => {
+  state.q = e.target.value;
+  render();
+});
+
+buildTabs();
+fetch('tools.json')
+  .then((r) => r.json())
+  .then((data) => { tools = data; render(); })
+  .catch(() => {
+    document.getElementById('empty').textContent =
+      '工具清單載入失敗。本地預覽請用 python3 -m http.server,不能直接開檔案。';
+    document.getElementById('empty').style.display = 'block';
+  });
+</script>
+</body>
+</html>
