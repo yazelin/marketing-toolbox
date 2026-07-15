@@ -1,0 +1,39 @@
+name: 投稿工具
+description: 推薦一個行銷人用得上的免費線上小工具
+title: "[投稿] 工具名稱"
+labels: ["投稿"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: 工具連結
+      placeholder: https://...
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 分類
+      options:
+        - 素材製作
+        - 文案與提示詞
+        - 發文前檢測
+        - 互動與名單
+        - 連結與追蹤
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: 為什麼行銷人需要它
+      description: 一兩句實戰場景,例如「抽獎貼文要公開透明的開獎方式」
+    validations:
+      required: true
+  - type: checkboxes
+    id: gate
+    attributes:
+      label: 收錄門檻確認(三項都要成立)
+      options:
+        - label: 免費(免費額度足以完成核心用途)
+        - label: 免註冊、免登入就能用到結果
+        - label: 開瀏覽器就能用,不用安裝
