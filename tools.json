@@ -1,0 +1,65 @@
+[
+  {
+    "name": "emoji 拉霸機",
+    "url": "https://yazelin.github.io/emoji-slot-machine/",
+    "category": "素材製作",
+    "tag": "自製",
+    "desc": "3×3 emoji 格子轉成循環拉霸動畫影片",
+    "usage": "FB 抽獎貼文放一支會動的開獎影片,比純文字停留更久、互動更多",
+    "repo": "https://github.com/yazelin/emoji-slot-machine"
+  },
+  {
+    "name": "LINE 貼圖工作室",
+    "url": "https://yazelin.github.io/line-sticker-studio/",
+    "category": "素材製作",
+    "tag": "自製",
+    "desc": "上傳一張圖,AI 生成八張 LINE 貼圖,打包 ZIP 可直接上架",
+    "usage": "品牌吉祥物做成貼圖上架 LINE,粉絲日常聊天就在幫你曝光",
+    "repo": "https://github.com/yazelin/line-sticker-studio"
+  },
+  {
+    "name": "AI 字體風格庫",
+    "url": "https://yazelin.github.io/ai-font-styles/",
+    "category": "文案與提示詞",
+    "tag": "自製",
+    "desc": "上百種 AI 生圖字體風格實渲圖卡,一鍵複製提示詞",
+    "usage": "做活動主視覺前先挑字體風格,提示詞直接複製進生圖工具",
+    "repo": "https://github.com/yazelin/ai-font-styles"
+  },
+  {
+    "name": "PromptFill",
+    "url": "https://yazelin.github.io/PromptFill/",
+    "category": "文案與提示詞",
+    "tag": "自製",
+    "desc": "結構化 AI 繪圖提示詞產生器",
+    "usage": "行銷素材要固定風格量產時,把提示詞欄位鎖住只換主題",
+    "repo": "https://github.com/yazelin/PromptFill"
+  },
+  {
+    "name": "行銷頁健檢器",
+    "url": "https://yazelin.github.io/marketing-page-checker/",
+    "category": "發文前檢測",
+    "tag": "自製",
+    "desc": "貼上網址,檢查 OG、SEO、CTA、速度與追蹤設定",
+    "usage": "活動頁上線前跑一輪,別等發文後才發現分享卡片破圖",
+    "repo": "https://github.com/yazelin/marketing-page-checker"
+  },
+  {
+    "name": "今天吃什麼",
+    "url": "https://yazelin.github.io/what-to-eat/",
+    "category": "互動與名單",
+    "tag": "自製",
+    "desc": "便當遊戲風餐點轉盤,點一下交給命運決定",
+    "usage": "社群互動貼文素材:叫粉絲轉一次,截圖留言今天的命運",
+    "repo": "https://github.com/yazelin/what-to-eat"
+  },
+  {
+    "name": "網頁粉碎機",
+    "url": "https://yazelin.github.io/div-smash/",
+    "category": "互動與名單",
+    "tag": "自製",
+    "desc": "貼一個網址,把網頁打成碎片,真實物理掉落堆疊",
+    "usage": "官網改版文的哏:把舊站打爛的影片配新站連結,自帶話題",
+    "repo": "https://github.com/yazelin/div-smash"
+  }
+]
