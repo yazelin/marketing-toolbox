@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#14161c"/>
+  <rect width="1200" height="6" fill="#f5a524"/>
+  <g transform="translate(92,96)">
+    <rect x="52" y="0" width="46" height="42" rx="14" fill="none" stroke="#f5a524" stroke-width="11"/>
+    <rect x="0" y="34" width="150" height="64" rx="12" fill="#f5a524"/>
+    <rect x="0" y="55" width="150" height="7" fill="#14161c"/>
+  </g>
+  <text x="92" y="340" font-family="Noto Sans CJK TC" font-weight="700" font-size="104" fill="#f3f4f6">行銷工具箱</text>
+  <text x="92" y="425" font-family="Noto Sans CJK TC" font-size="42" fill="#9aa1ad">免費、免註冊、開瀏覽器就能用的行銷小工具</text>
+  <text x="92" y="560" font-family="Noto Sans CJK TC" font-size="30" fill="#6b7280">yazelin.github.io/marketing-toolbox</text>
+</svg>
