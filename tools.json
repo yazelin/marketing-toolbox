@@ -167,5 +167,14 @@
     "desc": "所見即所得做出 LINE 風格對話截圖,頭像/引用回覆/手機外框,一鍵匯出 PNG(僅供創作示意)",
     "usage": "貼文或教學要放對話示意圖時,不用真的去截自己的聊天室,隱私和排版都自己控制",
     "repo": "https://github.com/yazelin/line-chat-maker"
+  },
+  {
+    "name": "瀏覽器去背",
+    "url": "https://yazelin.github.io/bye-bg/",
+    "category": "素材製作",
+    "tag": "自製",
+    "desc": "AI 去背在瀏覽器裡跑,圖不上傳、免排隊,可一鍵換白底",
+    "usage": "商品照去背換白底直接上架蝦皮 momo,機密商品圖也不怕外流",
+    "repo": "https://github.com/yazelin/bye-bg"
   }
 ]
