@@ -124,20 +124,13 @@
     "usage": "活動頁太慢廣告費就白燒,上線前先看手機分數"
   },
   {
-    "name": "Metatags",
-    "url": "https://metatags.io/",
+    "name": "分享卡預覽器",
+    "url": "https://yazelin.github.io/share-preview/",
     "category": "發文前檢測",
-    "tag": "官方",
-    "desc": "貼網址即時預覽 Google、FB、X 上的分享長相",
-    "usage": "發文前先看分享卡片會長怎樣,標題被截斷當場就知道"
-  },
-  {
-    "name": "OpenGraph.xyz",
-    "url": "https://www.opengraph.xyz/",
-    "category": "發文前檢測",
-    "tag": "官方",
-    "desc": "OG 標籤檢查器,列出缺哪些標籤與各平台預覽",
-    "usage": "分享卡片破圖時來這查是缺 og:image 還是尺寸不對"
+    "tag": "自製",
+    "desc": "FB、LINE、X、Google 分享長相一次看,改欄位即時更新",
+    "usage": "發文前先看分享卡會不會破圖,含台灣人最在乎的 LINE 預覽",
+    "repo": "https://github.com/yazelin/share-preview"
   },
   {
     "name": "抽獎轉盤",
